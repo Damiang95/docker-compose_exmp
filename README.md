@@ -1,3 +1,3 @@
 ##### start the docker-compose with this command 
 
- docker-compose up
+docker-compose up
