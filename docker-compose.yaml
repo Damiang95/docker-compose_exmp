@@ -1,0 +1,16 @@
+version: "3"
+services:
+  nginxproject:
+    container_name: nginx1-test
+    image: nginx:latest
+    ports:
+      - 8000:80
+    volumes:
+      - ./src:/usr/share/nginx/html
+  apache:
+    container_name: apache1-test
+    image: httpd:latest
+    ports:
+    - '7999:80'
+    volumes:
+    - ./website:/usr/local/apache2/htdocs
